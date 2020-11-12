@@ -1,0 +1,51 @@
+{
+  "name": "ts-koa2",
+  "version": "1.0.0",
+  "license": "MIT",
+  "main": "./src/app.ts",
+  "scripts": {
+    "start": "export PORT=4000 && gulp",
+    "build": "gulp build",
+    "eslint": "eslint --fix --ext .js,.ts src/",
+    "dev": "pm2 start process.yml",
+    "production": "pm2 start process.yml --env production",
+    "stop": "pm2 stop all",
+    "restart": "pm2 restart all",
+    "clean": "pm2 delete all"
+  },
+  "devDependencies": {
+    "@types/jsonwebtoken": "^8.5.0",
+    "@types/koa": "^2.11.6",
+    "@types/koa-compress": "^4.0.1",
+    "@types/koa-favicon": "^2.0.19",
+    "@types/koa-logger": "^3.1.1",
+    "@types/koa-router": "^7.4.1",
+    "@types/koa-static": "^4.0.1",
+    "@types/koa2-cors": "^2.0.1",
+    "@types/log4js": "^2.3.5",
+    "@types/mysql": "^2.15.15",
+    "@types/node": "^14.14.7",
+    "@typescript-eslint/eslint-plugin": "^4.7.0",
+    "@typescript-eslint/parser": "^4.7.0",
+    "del": "^6.0.0",
+    "eslint": "^7.13.0",
+    "gulp": "^4.0.2",
+    "gulp-nodemon": "^2.5.0",
+    "gulp-typescript": "^6.0.0-alpha.1",
+    "nodemon": "^2.0.6",
+    "ts-node": "^9.0.0",
+    "typescript": "^4.0.5"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "koa": "^2.13.0",
+    "koa-body": "^4.2.0",
+    "koa-favicon": "^2.1.0",
+    "koa-router": "^10.0.0",
+    "koa-static": "^5.0.0",
+    "log4js": "^6.3.0",
+    "mysql": "^2.18.1",
+    "reflect-metadata": "^0.1.13",
+    "uuid": "^8.3.1"
+  }
+}
